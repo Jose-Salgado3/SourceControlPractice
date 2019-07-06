@@ -15,9 +15,9 @@ namespace SourceControlPractice
             Console.WriteLine("Please enter a number between 1 and 100 (Inclusive):");
             number = Convert.ToInt32(Console.ReadLine());
 
-            divisibleByTwo(number);
-            Console.WriteLine();
-            upperFiftyPercentile(number);
+            divisibleByTwo(number); 
+            upperFiftyPercentile(number);   
+            favoriteNumber(number);
 
             Console.ReadKey();
         }
@@ -32,6 +32,7 @@ namespace SourceControlPractice
             {
                 Console.WriteLine($"The number {number} is NOT divisible by two!");
             }
+            Console.WriteLine();
         }
 
         static void upperFiftyPercentile(int number)
@@ -43,6 +44,15 @@ namespace SourceControlPractice
             else
             {
                 Console.WriteLine($"The number {number} is in the LOWER 50% of the number range!");
+            }
+            Console.WriteLine();
+        }
+
+        static void favoriteNumber(int number)
+        {
+            if (number == 3)
+            {
+                Console.WriteLine($"Hey, No Way! Number {number} is my creators favorite number!");
             }
         }
     }
