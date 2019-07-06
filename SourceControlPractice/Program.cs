@@ -10,6 +10,12 @@ namespace SourceControlPractice
     {
         static void Main(string[] args)
         {
+            int number = 0;
+
+            Console.WriteLine("Please enter a number between 1 and 100 (Inclusive):");
+            number = Convert.ToInt32(Console.ReadLine());
+
+            Console.ReadKey();
         }
     }
 }
