@@ -16,6 +16,8 @@ namespace SourceControlPractice
             number = Convert.ToInt32(Console.ReadLine());
 
             divisibleByTwo(number);
+            Console.WriteLine();
+            upperFiftyPercentile(number);
 
             Console.ReadKey();
         }
@@ -29,6 +31,18 @@ namespace SourceControlPractice
             else
             {
                 Console.WriteLine($"The number {number} is NOT divisible by two!");
+            }
+        }
+
+        static void upperFiftyPercentile(int number)
+        {
+            if (number > 50)
+            {
+                Console.WriteLine($"The number {number} is in the UPPER 50% of the number range!");
+            }
+            else
+            {
+                Console.WriteLine($"The number {number} is in the LOWER 50% of the number range!");
             }
         }
     }
