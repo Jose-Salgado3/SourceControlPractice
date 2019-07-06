@@ -15,7 +15,21 @@ namespace SourceControlPractice
             Console.WriteLine("Please enter a number between 1 and 100 (Inclusive):");
             number = Convert.ToInt32(Console.ReadLine());
 
+            divisibleByTwo(number);
+
             Console.ReadKey();
+        }
+
+        static void divisibleByTwo(int number)
+        {
+            if ((number % 2) == 0)
+            {
+                Console.WriteLine($"The number {number} is divisible by two!");
+            }
+            else
+            {
+                Console.WriteLine($"The number {number} is NOT divisible by two!");
+            }
         }
     }
 }
